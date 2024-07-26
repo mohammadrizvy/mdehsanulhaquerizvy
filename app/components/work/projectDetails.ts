@@ -1,21 +1,11 @@
 import {
-  SiCplusplus,
-  SiDaisyui,
   SiExpress,
   SiFirebase,
-  SiFramer,
-  SiGithub,
   SiJsonwebtokens,
   SiMongodb,
-  SiNeovim,
-  SiNextdotjs,
-  SiNextui, // Placeholder icon for Next UI
+  SiNextui, 
   SiReact,
-  SiRust,
   SiTailwindcss,
-  SiTypescript,
-  SiWebgl,
-  SiZig,
 } from "react-icons/si";
 import { IconType } from "react-icons";
 import chicStylin from "./../../sections/Project Images/chic.stylin.png";
