@@ -1,0 +1,109 @@
+[debug] [2024-07-25T22:49:51.573Z] ----------------------------------------------------------------------
+[debug] [2024-07-25T22:49:51.576Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-07-25T22:49:51.576Z] CLI Version:   13.14.1
+[debug] [2024-07-25T22:49:51.577Z] Platform:      win32
+[debug] [2024-07-25T22:49:51.577Z] Node Version:  v20.10.0
+[debug] [2024-07-25T22:49:51.577Z] Time:          Fri Jul 26 2024 04:49:51 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-07-25T22:49:51.577Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-25T22:49:51.637Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-25T22:49:51.637Z] > authorizing via signed-in user (mohammadrizvy55@gmail.com)
+[debug] [2024-07-25T22:49:51.637Z] [iam] checking project mdehsanulhaquerizvy for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-25T22:49:51.639Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdehsanulhaquerizvy:testIamPermissions [none]
+[debug] [2024-07-25T22:49:51.639Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdehsanulhaquerizvy:testIamPermissions x-goog-quota-user=projects/mdehsanulhaquerizvy
+[debug] [2024-07-25T22:49:51.639Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdehsanulhaquerizvy:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-25T22:49:53.030Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdehsanulhaquerizvy:testIamPermissions 200
+[debug] [2024-07-25T22:49:53.030Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdehsanulhaquerizvy:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-25T22:49:53.031Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mdehsanulhaquerizvy [none]
+[debug] [2024-07-25T22:49:53.454Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mdehsanulhaquerizvy 200
+[debug] [2024-07-25T22:49:53.454Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mdehsanulhaquerizvy {"projectId":"mdehsanulhaquerizvy","projectNumber":"15479660925","displayName":"mdehsanulhaquerizvy","name":"projects/mdehsanulhaquerizvy","resources":{"hostingSite":"mdehsanulhaquerizvy"},"state":"ACTIVE","etag":"1_cd3c390c-9fb8-4542-b058-0253786e5acc"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-07-25T22:50:04.293Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mdehsanulhaquerizvy/sites/mdehsanulhaquerizvy [none]
+[debug] [2024-07-25T22:50:05.297Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mdehsanulhaquerizvy/sites/mdehsanulhaquerizvy 200
+[debug] [2024-07-25T22:50:05.297Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mdehsanulhaquerizvy/sites/mdehsanulhaquerizvy {"name":"projects/mdehsanulhaquerizvy/sites/mdehsanulhaquerizvy","defaultUrl":"https://mdehsanulhaquerizvy.web.app","type":"DEFAULT_SITE"}
+[info] - info Creating an optimized production build...
+
+[info] - info Compiled successfully
+
+[info] - info Linting and checking validity of types...
+
+[info] 
+./app/animations/Animated.tsx
+61:14  Warning: Caution: `React` also has a named export `Children`. Check if you meant to write `import {Children} from 'react'` instead.  import/no-named-as-default-member
+
+./app/components/other/PreLoader.tsx
+3:8  Warning: 'Logo' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/components/work/projectDetails.ts
+2:5  Warning: 'SiCplusplus' is defined but never used.  @typescript-eslint/no-unused-vars
+4:5  Warning: 'SiGithub' is defined but never used.  @typescript-eslint/no-unused-vars
+4:15  Warning: 'SiNeovim' is defined but never used.  @typescript-eslint/no-unused-vars
+7:5  Warning: 'SiRust' is defined but never used.  @typescript-eslint/no-unused-vars
+11:5  Warning: 'SiZig' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/page.tsx
+21:12  Warning: 'isMobile' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./app/sections/Footer.tsx
+3:8  Warning: 'AnimatedBody' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/sections/Tools.tsx
+7:14  Warning: 'SiPostgresql' is defined but never used.  @typescript-eslint/no-unused-vars
+7:27  Warning: 'SiMysql' is defined but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info] - info Collecting page data...
+
+[info] - info Generating static pages (0/4)
+
+[info] - info Generating static pages (1/4)
+
+[info] - info Generating static pages (2/4)
+
+[info] - info Generating static pages (3/4)
+
+[info] - info Generating static pages (4/4)
+
+[info] - info Finalizing page optimization...
+
+[info] 
+
+[info] Route (app)                                Size     First Load JS
+┌ ○ /                                      87.9 kB         177 kB
+├ ○ /_not-found                            0 B                0 B
+└ λ /[...not_found]                        459 B            79 kB
++ First Load JS shared by all              78.5 kB
+  ├ chunks/596-4796b8a26438638b.js         25.6 kB
+  ├ chunks/fd9d1056-90a089dabbfdba49.js    50.8 kB
+  ├ chunks/main-app-e90061264fb74451.js    268 B
+  └ chunks/webpack-b67ea4e5f41cca2a.js     1.84 kB
+
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   239 B          76.1 kB
++ First Load JS shared by all              75.8 kB
+  ├ chunks/framework-85738fe605d88fc1.js   45.2 kB
+  ├ chunks/main-42fb9244a53e2ed2.js        28.6 kB
+  ├ chunks/pages/_app-4a5a2e725f3ba27a.js  246 B
+  └ chunks/webpack-b67ea4e5f41cca2a.js     1.84 kB
+
+[info] 
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /[...not_found]/page
+[info] 
+[debug] [2024-07-25T22:50:20.657Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mdehsanulhaquerizvy/sites/mdehsanulhaquerizvy [none]
+[debug] [2024-07-25T22:50:21.545Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mdehsanulhaquerizvy/sites/mdehsanulhaquerizvy 200
+[debug] [2024-07-25T22:50:21.545Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mdehsanulhaquerizvy/sites/mdehsanulhaquerizvy {"name":"projects/mdehsanulhaquerizvy/sites/mdehsanulhaquerizvy","defaultUrl":"https://mdehsanulhaquerizvy.web.app","type":"DEFAULT_SITE"}

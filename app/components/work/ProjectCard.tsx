@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { ProjectProps } from "./projectDetails";
 import Link from "next/link";
 import Image from "next/image";
@@ -23,7 +23,7 @@ const ProjectCard = ({
 }: ProjectProps) => {
   return (
     <motion.div
-      className="relative bg-cover bg-no-repeat bg-center z-10 h-[550px] w-full items-stretch justify-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]"
+      className="relative z-10 h-[550px] w-full items-stretch justify-center bg-cover bg-center bg-no-repeat py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]"
       initial="initial"
       animate="animate"
     >
@@ -59,7 +59,7 @@ const ProjectCard = ({
                 href={github}
                 target="_blank"
                 aria-label="Open GitHub Repository"
-                className="rounded-full w-[43px] bg-white p-3 md:p-5 text-[20px] md:w-[65px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                className="w-[43px] rounded-full bg-white p-3 text-[20px] md:w-[65px] md:p-5 md:text-[24px] lg:w-[65px] lg:text-[28px]"
                 data-blobity
                 data-blobity-radius="35"
                 data-blobity-offset-x="4"
@@ -72,7 +72,7 @@ const ProjectCard = ({
                 href={demo}
                 target="_blank"
                 aria-label="Open Live Demo"
-                className="w-[43px] rounded-full bg-white p-3 md:p-5 text-[20px] md:w-[65px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                className="w-[43px] rounded-full bg-white p-3 text-[20px] md:w-[65px] md:p-5 md:text-[24px] lg:w-[65px] lg:text-[28px]"
                 data-blobity
                 data-blobity-radius="35"
                 data-blobity-offset-x="4"
@@ -103,7 +103,7 @@ const ProjectCard = ({
             text={description}
             className="mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D]"
           />
-          <div className="mt-9 mb-9 grid grid-cols-5 gap-5 col-start-1 col-end-2">
+          <div className="col-start-1 col-end-2 mt-9 mb-9 grid grid-cols-5 gap-5">
             {technologies.map((IconComponent, index) => (
               <div key={index} className="relative">
                 <Link
